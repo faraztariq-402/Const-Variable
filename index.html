@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Arrays -->
+    <script>
+        // Reassignment to a const variable
+        const city = "Karachi";
+        city = "Lahore";  //....... it will show error because city variable is already been assigned a value
+        document.write(city);
+// Modification to a constant array
+        const cities = ["Islamabad", "Peshawar", "Multan"];
+        cities[0] = "Quetta";   //...... it will not show any error and will print "Quetta" in place of "Islamabad" because we are just doing modification in this case not reassignment
+        document.write(cities);
+
+        // Reassignment to a const array
+        const countries = ["Pakistan", "Australia", "England"];
+        countries = ["Afghanistan", "Paris"]; //Now it will show error because we are reassigning a variable which has been already declared
+        document.write(countries);
+    </script>
+</body>
+</html>
